@@ -2,10 +2,91 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nyxx | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1117;
+      color: #e6e6e6;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 50px;
+    }
+    header h1 { font-size: 2.6rem; color: #ffffff; }
+    header p { color: #9aa4b2; margin-top: 10px; font-size: 1.1rem; }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    h2 {
+      color: #7c9cff;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #2a2f3a;
+      padding-bottom: 8px;
+    }
+    .projets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .carte {
+      background: #181b24;
+      border: 1px solid #2a2f3a;
+      border-radius: 10px;
+      padding: 18px;
+    }
+    .carte h3 { color: #ffffff; margin-bottom: 6px; }
+    .carte p { color: #9aa4b2; font-size: 0.95rem; }
+    a { color: #7c9cff; }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bonjour, je m'appelle Nyxx</h1>
-  <p>Bienvenue sur mon portfolio.</p>
+
+  <header>
+    <h1>Bonjour, je m'appelle Nyxx</h1>
+    <p>Bienvenue sur mon portfolio.</p>
+  </header>
+
+  <section>
+    <h2>À propos</h2>
+    <p>Je suis un jeune qui à commencer récemment la programmation en auto-apprentissage. Langage maitrisé: Python</p>
+  </section>
+
+  <section>
+    <h2>Mes projets</h2>
+    <div class="projets">
+      <div class="carte">
+        <h3>Projet 1</h3>
+        <p>Fanorona (je de stratégie traditionnelle Malagache).</p>
+      </div>
+      <div class="carte">
+        <h3>Projet 2</h3>
+        <p>Simulateur de courant 2D.</p>
+      </div>
+      <div class="carte">
+        <h3>Projet 3</h3>
+        <p>Jeux d'esquive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact: +261373692837</h2>
+    <p>Retrouvez-moi sur <a href="https://github.com/Nyxx-D">GitHub</a>.</p>
+  </section>
+
+  <footer>© 2026 Nyxx</footer>
+
 </body>
 </html>
